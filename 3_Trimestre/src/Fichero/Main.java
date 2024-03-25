@@ -1,4 +1,4 @@
-package Fichero;
+package fichero;
 
 import java.io.File;
 
@@ -6,12 +6,12 @@ public class Main {
     static String linea = "==============================================================";
     public static void main(String[]args){
     
-    Relativo();
-    Absoluto();
-    Otro();
+    relativo();
+    absoluto();
+    otro();
     }
 
-    public static void Relativo(){
+    public static void relativo(){
 
         System.out.println(linea);
         String archivoRelativo = "Fichero.txt";
@@ -19,7 +19,7 @@ public class Main {
         System.out.println("Relativo: " + ficheroRel);
         System.out.println(linea);
     }
-    public static void Absoluto(){
+    public static void absoluto(){
 
         System.out.println(linea);
         String archivoAbsoluto = "Programacion\\3_Trimestre\\src\\Fichero\\Fichero.txt";
@@ -27,7 +27,7 @@ public class Main {
         System.out.println("Absoluto: " + ficheroAbs);
         System.out.println(linea);
     }
-    public static void Otro(){
+    public static void otro(){
 
         System.out.println(linea);
         String otroArchivo = "C:\\Users\\alumno";
