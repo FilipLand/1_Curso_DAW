@@ -34,6 +34,5 @@ public class Main {
         File ficheroOtro = new File(otroArchivo);
         System.out.println("Otro " + ficheroOtro);
         System.out.println(linea);
-
     }
 }
