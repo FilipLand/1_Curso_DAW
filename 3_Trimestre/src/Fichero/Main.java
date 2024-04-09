@@ -10,7 +10,6 @@ public class Main {
     absoluto();
     otro();
     }
-
     public static void relativo(){
 
         System.out.println(linea);
