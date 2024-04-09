@@ -22,7 +22,7 @@ public class Main {
 
         switch (opcion) {
             case 1: 
-                encriptar();break;
+                encriptar(fichero1, sc);break;
             case 2:
                 desencriptar();break;
             case 3:
@@ -32,9 +32,18 @@ public class Main {
                 break;
         }
     }
-    public static void encriptar(){
+    public static void encriptar(File fichero1, Scanner sc){
+        if (fichero1.exists()){
+            System.out.println("El archivo existe y se va encriptar");
 
+        } else {
+            System.out.println("No existe ningun archivo");
+            System.out.println("¿Que deseas hacer?");
+            System.out.println("(1) salir");
+            System.out.println("(2) Empezar de zero");
+            Integer opcion2 = sc.nextInt();
 
+        }
     }
     public static void desencriptar(){
 
