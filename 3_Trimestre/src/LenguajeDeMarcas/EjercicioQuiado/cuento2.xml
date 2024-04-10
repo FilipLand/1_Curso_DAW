@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE cuento>
+<!DOCTYPE cuento SYSTEM "cuentos.dtd">
 <cuento cod="B02" titulo="La leyenda del tesoro escondido" >
     <personajes>
         <personaje id="B1" tipo="principal">

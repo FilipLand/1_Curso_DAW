@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE cuento>
+<!DOCTYPE cuento SYSTEM "cuentos.dtd">
 <cuento cod="A01" titulo="La Cenicienta" genero="infantil">
     <personajes>
         <personaje id="A1" tipo="principal">
