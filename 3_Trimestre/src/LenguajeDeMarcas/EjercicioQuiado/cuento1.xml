@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE cuento>
+<cuento cod="A01" titulo="La Cenicienta" genero="infantil">
+    <personajes>
+        <personaje id="A1" tipo="principal">
+            <nombre> Cenicienta </nombre>
+            <genero> Femenino </genero>
+            <descripcion> Una joven trabajadora y bondadosa</descripcion>
+        </personaje>
+    </personajes>
+    <trama> La historia de Cenicienta, una joven maltratada por su 
+        madrastra y sus hermanastras, y su viaje para encontrar su
+        verdadero amor con la ayuda de la hada madrina. 
+    </trama>
+    <etiqueta nombre="amor"></etiqueta>
+    <etiqueta nombre="superacion"></etiqueta>
+</cuento>
