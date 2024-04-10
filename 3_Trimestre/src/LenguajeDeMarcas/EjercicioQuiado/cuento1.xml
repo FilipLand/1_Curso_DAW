@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE cuento SYSTEM "cuentos.dtd">
-<cuento cod="A01" titulo="La Cenicienta" genero="infantil">
+<!DOCTYPE cuento>
+<cuento cod="A01" titulo="La Cenicienta" genero="infantil"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:noNamespaceSchemaLocation="cuento.xsd">
     <personajes>
         <personaje id="A1" tipo="principal">
             <nombre> Cenicienta </nombre>
@@ -25,3 +27,4 @@
     <etiqueta nombre="amor"></etiqueta>
     <etiqueta nombre="superacion"></etiqueta>
 </cuento>
+</xs:schema>
