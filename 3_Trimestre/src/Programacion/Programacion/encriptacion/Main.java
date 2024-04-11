@@ -45,13 +45,21 @@ public class Main {
                 case 2 -> metodos();
                 default -> System.out.println("Hay un error");
             }
-
         }
     }
     public static void desencriptar() {
+        System.out.println("Vamos a desencriptar el documento");
+        if (estaEncriptado.true) {
+            
+        } else {
+            
+        }
 
     }
     public static void salir() {
 
+    }
+    public static void estaEncriptado(){
+    boolean encriptado;
     }
 }
