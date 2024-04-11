@@ -22,18 +22,10 @@ public class Main {
         Integer opcion = sc.nextInt();
 
         switch (opcion) {
-            case 1:
-                encriptar(fichero1, sc);
-                break;
-            case 2:
-                desencriptar();
-                break;
-            case 3:
-                salir();
-                break;
-            default:
-                System.out.println("No has introducido una opcion correcta");
-                break;
+            case 1 -> encriptar(fichero1, sc);
+            case 2 -> desencriptar();
+            case 3 -> salir();
+            default -> System.out.println("No has introducido una opcion correcta");
         }
     }
 
@@ -48,9 +40,14 @@ public class Main {
             System.out.println("(2) Empezar de zero");
             Integer opcion2 = sc.nextInt();
 
+            switch (opcion2) {
+                case 1 -> salir(); 
+                case 2 -> metodos();
+                default -> System.out.println("Hay un error");
+            }
+
         }
     }
-
     public static void desencriptar() {
 
     }
