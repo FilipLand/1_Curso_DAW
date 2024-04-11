@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<xs:annotation>
+    <xs:documentation>
+        <titulo>Ejemplo de repaso Cuentos</titulo>
+        <modulo>Lenguaje de Marcas y sistemas de gestion de la información</modulo>
+        <fecha_creacion>2024-04-10</fecha_creacion>
+        <autor>Filip Mlynarczyk</autor>
+    </xs:documentation>
+</xs:annotation>
+<!--elementos complejos -->
+<!--elemento raiz cunto (personajes, trama, etiqueta)-->
+    <xs:element name="cuento">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="personajes"/>
+                <xs:element ref="trama"/>
+                <xs:element ref="etiqueta" minOccurs="0" maxOccurs="unbounded"/>
+            </xs:sequence>
+            <xs:attribute ref="cod" use="required"/>
+            <xs:attribute ref="titulo" use="required"/>
+            <xs:attribute ref="genero" use="optional"/>
+        </xs:complexType>
+    </xs:element>
+
+<!-- elemento personajes (personaje+) -->
+    <xs:element name="personajes">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="personaje" maxOccurs="unbounded" />
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+<!-- elemto personaje(nombre, genero, descripcion?)-->
+<xs:element name="personaje">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="nombre"/>
+                <xs:element ref="genero"/>
+                <xs:element ref="descripcion" minOccurs="0"/>
+            </xs:sequence>
+            <xs:attribute ref="id" use="required"/>
+            <xs:attribute ref="tipo" default="principal"/>
+        </xs:complexType>
+        </xs:element>
+
+        <!--elemento etiqueta-->
+    <xs:element name="etiqueta">
+        <xs:complexType>
+            <xs:attribute ref="nombre" use="required"/>
+        </xs:complexType>
+    </xs:element>
+
+        <!-- Elementos simples -->
+        <xs:element name="trama" type="xs:string"/>
+</xs:schema>
