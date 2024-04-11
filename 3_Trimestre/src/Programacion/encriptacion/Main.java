@@ -1,14 +1,15 @@
-package encriptacion;
+package Programacion.encriptacion;
 
 import java.io.File;
 import java.util.Scanner;
 
-public class Main { 
+public class Main {
     public static void main(String[] args) {
         System.out.println("Bienvenido al programa de encriptación");
         metodos();
     }
-    public static void metodos(){
+
+    public static void metodos() {
         System.out.println("Pasame un archivo de texto que quieres encriptar");
         Scanner sc = new Scanner(System.in);
         String archivo = sc.nextLine();
@@ -21,19 +22,23 @@ public class Main {
         Integer opcion = sc.nextInt();
 
         switch (opcion) {
-            case 1: 
-                encriptar(fichero1, sc);break;
+            case 1:
+                encriptar(fichero1, sc);
+                break;
             case 2:
-                desencriptar();break;
+                desencriptar();
+                break;
             case 3:
-                salir();break;
-            default: 
+                salir();
+                break;
+            default:
                 System.out.println("No has introducido una opcion correcta");
                 break;
         }
     }
-    public static void encriptar(File fichero1, Scanner sc){
-        if (fichero1.exists()){
+
+    public static void encriptar(File fichero1, Scanner sc) {
+        if (fichero1.exists()) {
             System.out.println("El archivo existe y se va encriptar");
 
         } else {
@@ -45,14 +50,12 @@ public class Main {
 
         }
     }
-    public static void desencriptar(){
 
+    public static void desencriptar() {
 
     }
-    public static void salir(){
-        /**
-         * 
-         */
+
+    public static void salir() {
 
     }
 }
