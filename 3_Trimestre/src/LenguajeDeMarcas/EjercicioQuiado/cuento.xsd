@@ -24,7 +24,6 @@
     </xs:element>
 
 <!-- elemento personajes (personaje+) -->
-    
     <xs:element name="personajes">
         <xs:complexType>
             <xs:sequence>
@@ -44,8 +43,8 @@
             <xs:attribute ref="tipo" default="principal"/>
         </xs:complexType>
         </xs:element>
+
         <!--elemento etiqueta-->
-    
     <xs:element name="etiqueta">
         <xs:complexType>
             <xs:attribute ref="nombre" use="required"/>
