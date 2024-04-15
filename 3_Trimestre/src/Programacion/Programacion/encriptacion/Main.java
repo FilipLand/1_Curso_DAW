@@ -32,6 +32,21 @@ public class Main {
     public static void encriptar(File fichero1, Scanner sc) {
         if (fichero1.exists()) {
             System.out.println("El archivo existe y se va encriptar");
+            String nombreArchivo = fichero1.getName();/* cosequir el nombre del archivo */
+
+            String[] partes = nombreArchivo.split("."); /* separarlo en dos [] */
+            String parte1archivo = partes[1];
+            /* String parte2archivo = partes[2]; Archivo que se puede utilzar mas tarde */
+            String archivoFinal = (parte1archivo + ".crip"); /* nombrar el archivo */
+            /* hay que poner la ruta */
+            File nuevaExtension = new File("" + archivoFinal);
+
+            if (fichero1.renameTo(nuevaExtension)) {
+                System.out.println("Archivo Renombrado");
+
+            } else {
+                System.out.println("error no existe el archivo");
+            }
 
         } else {
             System.out.println("No existe ningun archivo");
@@ -40,14 +55,28 @@ public class Main {
             System.out.println("(2) Empezar de zero");
             Integer opcion2 = sc.nextInt();
 
+            switch (opcion2) {
+                case 1 -> salir();
+                case 2 -> metodos();
+                default -> System.out.println("Hay un error");
+            }
         }
     }
 
     public static void desencriptar() {
+        System.out.println("Vamos a desencriptar el documento");
+        if (estaEncriptado.istrue) {
 
+        } else {
+
+        }
     }
 
     public static void salir() {
 
+    }
+
+    public static void estaEncriptado(boolean escriptado) {
+        boolean encriptado;
     }
 }
