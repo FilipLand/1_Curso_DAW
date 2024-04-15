@@ -23,13 +23,10 @@ public class Main {
 
         switch (opcion) {
             case 1 -> encriptar(fichero1, sc);
-            case 2 -> desencriptar();
+            case 2 -> desencriptar(true);
             case 3 -> salir();
             default -> System.out.println("No has introducido una opcion correcta");
-            case 1 -> encriptar(fichero1, sc);
-            case 2 -> desencriptar();
-            case 3 -> salir();
-            default -> System.out.println("No has introducido una opcion correcta");
+            
         }
     }
 
@@ -54,6 +51,7 @@ public class Main {
 
         } else {
             System.out.println("No existe ningun archivo");
+            System.out.println("¿Que deseas hacer?");
             System.out.println("(1) salir");
             System.out.println("(2) Empezar de zero");
             Integer opcion2 = sc.nextInt();
@@ -66,17 +64,15 @@ public class Main {
         }
     }
 
-    public static void desencriptar() {
+    public static void desencriptar(boolean encriptado) {
         System.out.println("Vamos a desencriptar el documento");
-        if (estaEncriptado.istrue) {
+        if (encriptado = true) {
 
         } else {
+            System.out.print("no esta escriptado");
 
         }
     }
-
-    }
-
     public static void salir() {
 
     }
