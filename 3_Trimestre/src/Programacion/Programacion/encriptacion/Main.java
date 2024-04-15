@@ -26,6 +26,10 @@ public class Main {
             case 2 -> desencriptar();
             case 3 -> salir();
             default -> System.out.println("No has introducido una opcion correcta");
+            case 1 -> encriptar(fichero1, sc);
+            case 2 -> desencriptar();
+            case 3 -> salir();
+            default -> System.out.println("No has introducido una opcion correcta");
         }
     }
 
@@ -70,6 +74,8 @@ public class Main {
         } else {
 
         }
+    }
+
     }
 
     public static void salir() {
