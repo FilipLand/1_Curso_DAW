@@ -61,12 +61,19 @@
         <xs:element name="precio">
             <xs:complexType>
                 <xs:simpleContent>
-                    <xs:extension base="xs:float">
+                    <xs:extension base="precio_formato">
                         <xs:attribute ref="moneda" default="eur"/>
                     </xs:extension>
                 </xs:simpleContent>
             </xs:complexType>
         </xs:element>
+        <!-- tipo de dato nuevo definido por el usuario -->
+        <xs:simpleType name="precio_formato">
+            <xs:restriction base="xs:decimal">
+            <xs:totalDigits value="4"/>
+            <xs:fractionDigits value="2"/>
+            </xs:restriction>
+        </xs:simpleType>
 
         <!-- Elementos simples -->
         <!-- Elementos simples de cuento-->
