@@ -54,7 +54,6 @@ public class Main {
 
         } else {
             System.out.println("No existe ningun archivo");
-            System.out.println("¿Que deseas hacer?");
             System.out.println("(1) salir");
             System.out.println("(2) Empezar de zero");
             Integer opcion2 = sc.nextInt();
