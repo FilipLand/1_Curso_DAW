@@ -52,5 +52,49 @@
     </xs:element>
 
         <!-- Elementos simples -->
+        <!-- Elementos simples de cuento-->
         <xs:element name="trama" type="xs:string"/>
+        <!-- elementos simples de personaje -->
+        <xs:element name="nombre" type="xs:string"/>
+        <xs:element name="genero">
+            <xs:simpleType>
+                <xs:restriction base="xs:string">
+                    <xs:pattern value="masculino|femenino|neutro"/>
+                </xs:restriction>
+            </xs:simpleType>
+        </xs:element>
+        <xs:element name="descripcion" type="xs:string"/>
+
+        <!-- atributos -->
+        <!-- Atributos de cuento -->
+        <xs:attribute name="cod">
+            <xs:simpleType>
+                <xs:restriction base="xs:string">
+                    <xs:pattern value="[A-Z]\d{2}"/>
+                </xs:restriction>
+            </xs:simpleType>
+        </xs:attribute>
+        <xs:attribute name="titulo" type="xs:string"/>
+        <xs:attribute name="genero">
+            <xs:simpleType>
+                <xs:restriction base="xs:string">
+                    <xs:enumeration value="infantil"/>
+                    <xs:enumeration value="fantasia"/>
+                    <xs:enumeration value="terror"/>
+                </xs:restriction>
+            </xs:simpleType>
+        </xs:attribute>
+        <!-- atributos de personaje -->
+        <xs:attribute name="id" type="xs:ID"/>
+        <xs:attribute name="tipo">
+            <xs:simpleType>
+                <xs:restriction base="xs:string">
+                    <xs:enumeration value="principal"/>
+                    <xs:enumeration value="secundario"/>
+                    <xs:enumeration value="antagonista"/>
+                </xs:restriction>
+            </xs:simpleType>
+        </xs:attribute>
+            <!-- atributo de etiqueta -->
+            <xs:attribute name="nombre" type="xs:string"/> 
 </xs:schema>

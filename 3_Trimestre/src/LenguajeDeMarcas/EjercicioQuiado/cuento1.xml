@@ -6,17 +6,17 @@ xsi:noNamespaceSchemaLocation="cuento.xsd">
     <personajes>
         <personaje id="A1" tipo="principal">
             <nombre> Cenicienta </nombre>
-            <genero> Femenino </genero>
+            <genero>femenino</genero>
             <descripcion> Una joven trabajadora y bondadosa</descripcion>
         </personaje>
         <personaje id="A2" tipo="secundario">
             <nombre> madrastra </nombre>
-            <genero> Femenino </genero>
+            <genero>femenino</genero>
             <descripcion> Una mujer cruel y ambiciosa</descripcion>
         </personaje>
         <personaje id="A3" tipo="principal">
             <nombre> El Principe </nombre>
-            <genero> Masculino </genero>
+            <genero>masculino</genero>
             <descripcion> Un joven apuesto y formal</descripcion>
         </personaje>
     </personajes>
@@ -27,4 +27,3 @@ xsi:noNamespaceSchemaLocation="cuento.xsd">
     <etiqueta nombre="amor"></etiqueta>
     <etiqueta nombre="superacion"></etiqueta>
 </cuento>
-</xs:schema>
