@@ -5,7 +5,6 @@
 
 package Programacion.encriptacion;
 
-
 class encriptado {
 
 }
