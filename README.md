@@ -1,1 +1,1 @@
-Este es mi proyecto Personal y para mejorar. Puedo subir cosas a clases pero voy seguramenete estara mal.  
+Este es mi proyecto Personal y para mejorar. Puedo subir cosas a clases pero, seguramenete estaran mal.  
