@@ -8,6 +8,29 @@
  * */
 package Programacion.Tema8.iterable.claseIterable;
 
-public class claseIterable {
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.List;
 
+public class claseIterable {
+    public static void main(String[] args) {
+        List<Alumno> alumnos = new ArrayList<>();
+        Lista(alumnos);
+
+        Iterator<Alumno> iterador = alumnos.iterator();
+        while (iterador.hasNext()) {
+            System.out.println(iterador.next());
+        }
+    }
+
+    public static void Lista(List<Alumno> alumnos) {
+        alumnos.add(new Alumno("Filip", "hgyhgu4", "2b", 7.5));
+        alumnos.add(new Alumno("Laura", "hhdi4aa", "2c", 8.5));
+        alumnos.add(new Alumno("Erika", "jshuia4", "2d", 9.2));
+        alumnos.add(new Alumno("Alexandra", "sdjada4", "1b", 6.5));
+        alumnos.add(new Alumno("Fran", "hjsdaho0", "3a", 7));
+        alumnos.add(new Alumno("Pablo", "654sasd", "la", 0));
+        alumnos.add(new Alumno("Marcos", "654sasd", "la", 7));
+        alumnos.add(new Alumno("Jesus", "654sasd", "2b", 6));
+    }
 }
