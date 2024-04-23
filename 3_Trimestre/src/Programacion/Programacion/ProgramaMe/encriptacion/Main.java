@@ -1,4 +1,4 @@
-package Programacion.encriptacion;
+package Programacion.ProgramaMe.encriptacion;
 
 import java.io.File;
 import java.util.Scanner;
@@ -26,7 +26,7 @@ public class Main {
             case 2 -> desencriptar(true);
             case 3 -> salir();
             default -> System.out.println("No has introducido una opcion correcta");
-            
+
         }
     }
 
@@ -73,6 +73,7 @@ public class Main {
 
         }
     }
+
     public static void salir() {
 
     }

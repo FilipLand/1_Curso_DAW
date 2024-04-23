@@ -1,4 +1,4 @@
-package Programacion.Fichero;
+package Programacion.Ficheros.Fichero;
 
 import java.io.File;
 

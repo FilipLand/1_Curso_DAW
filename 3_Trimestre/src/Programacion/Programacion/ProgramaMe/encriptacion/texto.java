@@ -1,4 +1,4 @@
-package Programacion.encriptacion;
+package Programacion.ProgramaMe.encriptacion;
 
 public class texto {
     /*

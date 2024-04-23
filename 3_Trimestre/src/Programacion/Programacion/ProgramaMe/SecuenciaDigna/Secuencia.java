@@ -1,4 +1,4 @@
-package Programacion.SecuenciaDigna;
+package Programacion.ProgramaMe.SecuenciaDigna;
 
 public class Secuencia {
     static java.util.Scanner in;
