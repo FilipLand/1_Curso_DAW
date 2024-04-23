@@ -1,4 +1,4 @@
-package Programacion.ProgramaMe.encriptacion;
+package Programacion.encriptacion;
 
 import java.io.File;
 import java.util.Scanner;
