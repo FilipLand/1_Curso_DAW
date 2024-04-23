@@ -1,4 +1,5 @@
-/**Crea la clase alumno con los siguientes atributos:
+/**
+ * Crea la clase alumno con los siguientes atributos:
  *  nombre, nia, edad, curso y nota media. 
  *  Crea además una clase que implemente la interfaz Iterable
  *  y que permita recorrer una lista de alumnos. Crea un

@@ -6,22 +6,26 @@ public class Secuencia {
     public static void casoDePrueba() {
         int cantNum = in.nextInt();
         int[] cadena = new int[cantNum];
-        
+
         for (int i = 0; i < cadena.length; i++) {
             String numCad = in.nextLine();
             String[] partes = numCad.split(" ");
-            
+
             for (int j = 0; j < partes.length; j++) {
                 int valor1 = Integer.parseInt(partes[j + 1]);
                 int valor2 = Integer.parseInt(partes[j]);
-                
-                if (Math.abs(valor2) > (Math.abs(valor1))) {
-                    if(){
 
-                    };
-                } else if () {
-                    
-                }
+                if (Math.abs(valor2) > (Math.abs(valor1))) {
+                    /*
+                     * if(){
+                     * 
+                     * };
+                     */
+                } /*
+                   * else if () {
+                   * 
+                   * }
+                   */
             }
         }
     } // casoDePrueba
