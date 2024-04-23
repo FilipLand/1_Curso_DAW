@@ -29,8 +29,8 @@ public class claseIterable {
         alumnos.add(new Alumno("Erika", "jshuia4", "2d", 9.2));
         alumnos.add(new Alumno("Alexandra", "sdjada4", "1b", 6.5));
         alumnos.add(new Alumno("Fran", "hjsdaho0", "3a", 7));
-        alumnos.add(new Alumno("Pablo", "654sasd", "la", 0));
-        alumnos.add(new Alumno("Marcos", "654sasd", "la", 7));
-        alumnos.add(new Alumno("Jesus", "654sasd", "2b", 6));
+        alumnos.add(new Alumno("Pablo", "654sasd", "la", 10));
+        alumnos.add(new Alumno("Marcos", "614sasd", "la", 7));
+        alumnos.add(new Alumno("Jesus", "674sasd", "2b", 6));
     }
 }
