@@ -7,7 +7,7 @@
  *  por pantalla. A continuación, recorre esa lista con un
  *  iterador, imprimiendo los alumnos, uno a uno por pantalla. 
  * */
-package Programacion.Tema8.iterable.claseIterable;
+package ProgramacionJava.Tema8.iterable.claseIterable;
 
 import java.util.ArrayList;
 import java.util.Iterator;

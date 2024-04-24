@@ -1,4 +1,4 @@
-package Programacion.Tema8.iterable.claseIterable;
+package ProgramacionJava.Tema8.iterable.claseIterable;
 
 public class Alumno {
 

@@ -2,7 +2,7 @@
  los imprima por pantalla. A continuación, recorre esa lista 
  con un iterador, imprimiendo los números, uno a uno por pantalla. */
 
-package Programacion.Tema8.iterable.recorreIterable;
+package ProgramacionJava.Tema8.iterable.recorreIterable;
 
 import java.util.ArrayList;
 import java.util.Iterator;

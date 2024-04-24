@@ -1,4 +1,4 @@
-package Programacion.ProgramaMe.CodigoUnico;
+package ProgramacionJava.ProgramaMe.CodigoUnico;
 
 public class Main {
     static java.util.Scanner in;

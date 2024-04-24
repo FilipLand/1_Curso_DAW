@@ -1,4 +1,4 @@
-package Programacion.encriptacion;
+package ProgramacionJava.encriptacion;
 
 public class texto {
     /*

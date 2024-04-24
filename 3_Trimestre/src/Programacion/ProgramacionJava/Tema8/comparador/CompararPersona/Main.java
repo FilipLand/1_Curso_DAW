@@ -1,4 +1,4 @@
-package Programacion.Tema8.comparador.CompararPersona;
+package ProgramacionJava.Tema8.comparador.CompararPersona;
 
 import java.util.ArrayList;
 import java.util.List;

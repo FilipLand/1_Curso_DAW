@@ -3,7 +3,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
 
-package Programacion.encriptacion;
+package ProgramacionJava.encriptacion;
 
 class encriptado {
 
