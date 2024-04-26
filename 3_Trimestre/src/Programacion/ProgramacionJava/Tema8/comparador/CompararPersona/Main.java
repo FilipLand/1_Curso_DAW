@@ -9,6 +9,7 @@ import java.util.List;
 public class Main {
     public static void main(String[] args) {
         // T0D0 hacer logger que no me sirve pero venga que no loo explico bien
+        // T0D0 meter el colator
         List<Estudiante> estudiantes = new ArrayList<>();
         try {
             File nombreArchivoEstudiante = new File("../Estudiante.csv");
