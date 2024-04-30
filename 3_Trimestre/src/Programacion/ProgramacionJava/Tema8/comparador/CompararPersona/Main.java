@@ -5,6 +5,7 @@ import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.util.ArrayList;
 import java.util.List;
+import au.com.bytecode.opencsv.CSVReader;
 
 public class Main {
     public static void main(String[] args) {
@@ -13,6 +14,8 @@ public class Main {
         List<Estudiante> estudiantes = new ArrayList<>();
         try {
             File nombreArchivoEstudiante = new File("../Estudiante.csv");
+            CSVReader csvReader = new CSVReader(nombreArchivoEstudiante);
+            List<String[]> datos = csvReader.readAll();
             FileReader arcivoEstudiante = new FileReader(nombreArchivoEstudiante);
             lista(estudiantes);
         } catch (FileNotFoundException e) {
