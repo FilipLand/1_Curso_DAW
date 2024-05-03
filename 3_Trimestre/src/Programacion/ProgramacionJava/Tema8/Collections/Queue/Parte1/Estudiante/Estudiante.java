@@ -1,4 +1,4 @@
-package ProgramacionJava.Tema8.Collections.Queue.Parte1;
+package ProgramacionJava.Tema8.Collections.Queue.Parte1.Estudiante;
 
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
