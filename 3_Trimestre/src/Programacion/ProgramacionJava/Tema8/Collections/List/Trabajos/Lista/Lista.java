@@ -1,4 +1,4 @@
-package ProgramacionJava.Tema8.List.Trabajos.Lista;
+package ProgramacionJava.Tema8.Collections.List.Trabajos.Lista;
 
 import java.util.Arrays;
 import java.util.List;
