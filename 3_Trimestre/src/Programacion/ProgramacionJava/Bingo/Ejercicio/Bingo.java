@@ -45,7 +45,7 @@ public class Bingo {
         String cuidadL;
         String fecha;
         int numeroJugador = i + 1;
-        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("d/M/y");
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("y/M/d");
         sc.nextLine();
         System.out.println("Introduce el nombre del jugador: " + numeroJugador);
         nombreL = sc.nextLine();
