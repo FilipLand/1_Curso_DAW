@@ -18,7 +18,8 @@ public class Main {
         List<Estudiante> estudiantes = new ArrayList<>();
         try {
             leerArchivos();
-            lista(estudiantes, valor);
+            Object valor;
+            lista(estudiantes);
 
         } catch (FileNotFoundException e) {
             System.out.println("Hay un error al intenar leer un archivo");
@@ -31,12 +32,12 @@ public class Main {
 
     public static void lista(List<Estudiante> estudiantes) {
         for (int i = 1; i < estudiantes.size(); i++) {
-            estudiantes.add(new Estudiante(valor));
+            estudiantes.add(new Estudiante(null, null, null, i));
         }
         estudiantes.add(new Estudiante("Filip", "Mlynarczyk", "19/06/2004", 5));
     }
 
-    public static String leerArchivos() throws IOException {
+    public static void leerArchivos() throws IOException {
         String linea;
         String valor;
         File nombreArchivoEstudiante = new File("../Estudiante.csv");
@@ -48,6 +49,5 @@ public class Main {
             }
         }
         buffedreader.close();
-        return valor;
     }
 }
