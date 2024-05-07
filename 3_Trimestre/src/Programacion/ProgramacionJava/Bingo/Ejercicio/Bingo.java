@@ -12,11 +12,12 @@ public class Bingo {
     public static final int MAXIMOPERSONAS = 100;
 
     public static void main(String[] args) {
+        System.out.println("🔞 Bienvenido al BINGO 🔞");
+        System.out.println("¿Cuántos jugadores quieres jugar al bingo? 👤👤");
+        System.out.println("Máximo 100 personas");
+
         // Try con Scanner
         try (Scanner sc = new Scanner(System.in)) {
-            System.out.println("🔞 Bienvenido al BINGO 🔞");
-            System.out.println("¿Cuántos jugadores quieres jugar al bingo? 👤👤");
-            System.out.println("Máximo 100 personas");
             personas = sc.nextInt();
             List<Jugador> jugadores = new ArrayList<>();
             if (personas > MAXIMOPERSONAS) {
@@ -45,19 +46,23 @@ public class Bingo {
         String cuidadL;
         String fecha;
         int numeroJugador = i + 1;
-        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("y/M/d");
+
+        // nombre
         sc.nextLine();
         System.out.println("Introduce el nombre del jugador: " + numeroJugador);
         nombreL = sc.nextLine();
 
+        // cuidad
         System.out.println("Introduce la cuidad del jugador: " + numeroJugador);
         cuidadL = sc.nextLine();
 
-        System.out.println("La fecha tiene que ser dd/MM/yyyy ejemplo 01/01/2001");
+        // fecha
+        System.out.println("La fecha tiene que ser dd-MM-yyyy ejemplo 01-01-2001");
         System.out.println("Introduce la fecha del jugador: " + numeroJugador);
         fecha = sc.nextLine();
-        LocalDateTime fechaL = LocalDateTime.parse(fecha, formatter);
-        String fechaDefiniva = fechaL.toString();
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd-MM-yyyy");
+        LocalDateTime fechaLocal = LocalDateTime.parse(fecha, formatter);
+        String fechaDefiniva = fechaLocal.toString();
 
         jugadores.add(new Jugador(nombreL, cuidadL, fechaDefiniva));
     }
