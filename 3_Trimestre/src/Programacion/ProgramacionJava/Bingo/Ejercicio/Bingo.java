@@ -14,6 +14,7 @@ public class Bingo {
     public static final int MAXIMOPERSONAS = 100;
 
     public static void main(String[] args) {
+
         Logger logger = Logger.getLogger(Bingo.class.getName());
         logger.info("🔞 Bienvenido al BINGO 🔞");
         logger.info("¿Cuántos jugadores quieres jugar al bingo? 👤👤");
@@ -34,9 +35,9 @@ public class Bingo {
             }
             // Todos los Catch
         } catch (IllegalArgumentException e1) {
-            logger.info(e1.getMessage());
+            logger.warning(e1.getMessage());
         } catch (InputMismatchException e2) {
-            logger.info("Debe ser un número, no otro carácter");
+            logger.warning("Debe ser un número, no otro carácter");
             // Finally
         } finally {
             logger.info("Programa acaba");
@@ -71,7 +72,7 @@ public class Bingo {
             jugadores.add(new Jugador(nombreL, cuidadL, fechaDefiniva));
 
         } catch (DateTimeException e) {
-            logger.info("Has introducido mal la fecha");
+            logger.warning("Has introducido mal la fecha");
         }
     }
 }
