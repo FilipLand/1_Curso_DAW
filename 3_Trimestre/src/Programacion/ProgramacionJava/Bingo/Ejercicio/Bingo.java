@@ -1,20 +1,23 @@
 package ProgramacionJava.Bingo.Ejercicio;
 
-import java.time.LocalDateTime;
+import java.time.DateTimeException;
+import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 import java.util.InputMismatchException;
 import java.util.List;
 import java.util.Scanner;
+import java.util.logging.Logger;
 
 public class Bingo {
     static int personas;
     public static final int MAXIMOPERSONAS = 100;
 
     public static void main(String[] args) {
-        System.out.println("🔞 Bienvenido al BINGO 🔞");
-        System.out.println("¿Cuántos jugadores quieres jugar al bingo? 👤👤");
-        System.out.println("Máximo 100 personas");
+        Logger logger = Logger.getLogger(Bingo.class.getName());
+        logger.info("🔞 Bienvenido al BINGO 🔞");
+        logger.info("¿Cuántos jugadores quieres jugar al bingo? 👤👤");
+        logger.info("Máximo 100 personas");
 
         // Try con Scanner
         try (Scanner sc = new Scanner(System.in)) {
@@ -25,23 +28,23 @@ public class Bingo {
             } else {
                 System.out.println("Habrá un total de " + personas + " personas en la partida");
                 for (int i = 0; i < personas; i++) {
-                    listaPersonas(jugadores, sc, i);
+                    listaPersonas(jugadores, sc, i, logger);
                 }
                 System.out.println(jugadores);
             }
             // Todos los Catch
         } catch (IllegalArgumentException e1) {
-            System.out.println(e1.getMessage());
+            logger.info(e1.getMessage());
         } catch (InputMismatchException e2) {
-            System.out.println("Debe ser un número, no otro carácter");
+            logger.info("Debe ser un número, no otro carácter");
             // Finally
         } finally {
-            System.out.println("Programa acaba");
+            logger.info("Programa acaba");
         }
     }
 
     // Lista de personas
-    public static void listaPersonas(List<Jugador> jugadores, Scanner sc, int i) {
+    public static void listaPersonas(List<Jugador> jugadores, Scanner sc, int i, Logger logger) {
         String nombreL;
         String cuidadL;
         String fecha;
@@ -57,13 +60,18 @@ public class Bingo {
         cuidadL = sc.nextLine();
 
         // fecha
-        System.out.println("La fecha tiene que ser dd-MM-yyyy ejemplo 01-01-2001");
-        System.out.println("Introduce la fecha del jugador: " + numeroJugador);
-        fecha = sc.nextLine();
-        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd-MM-yyyy");
-        LocalDateTime fechaLocal = LocalDateTime.parse(fecha, formatter);
-        String fechaDefiniva = fechaLocal.toString();
+        try {
+            logger.info("La fecha tiene que ser dd-MM-yyyy ejemplo 01-01-2001");
+            System.out.println("Introduce la fecha del jugador: " + numeroJugador);
+            fecha = sc.nextLine();
 
-        jugadores.add(new Jugador(nombreL, cuidadL, fechaDefiniva));
+            DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd-MM-yyyy");
+            LocalDate fechaLocal = LocalDate.parse(fecha, formatter);
+            String fechaDefiniva = fechaLocal.toString();
+            jugadores.add(new Jugador(nombreL, cuidadL, fechaDefiniva));
+
+        } catch (DateTimeException e) {
+            logger.info("Has introducido mal la fecha");
+        }
     }
 }
