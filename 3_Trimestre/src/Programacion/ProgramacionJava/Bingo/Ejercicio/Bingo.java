@@ -16,9 +16,9 @@ public class Bingo {
     public static void main(String[] args) {
 
         Logger logger = Logger.getLogger(Bingo.class.getName());
-        logger.info("🔞 Bienvenido al BINGO 🔞");
-        logger.info("¿Cuántos jugadores quieres jugar al bingo? 👤👤");
-        logger.info("Máximo 100 personas");
+        System.out.println("🔞 Bienvenido al BINGO 🔞");
+        System.out.println("¿Cuántos jugadores quieres jugar al bingo? 👤👤");
+        System.out.println("Máximo 100 personas");
 
         // Try con Scanner
         try (Scanner sc = new Scanner(System.in)) {
