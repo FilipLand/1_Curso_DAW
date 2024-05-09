@@ -2,7 +2,6 @@ var Nombre = "Andrés";
 var Apellido1 = "López";
 var Apellido2 = "García";
 
-
 var nombre1 = "\"nombre\""
 var apellido11 = "\"apellido1\""
 var apellido21 = "\"apellido2\""
