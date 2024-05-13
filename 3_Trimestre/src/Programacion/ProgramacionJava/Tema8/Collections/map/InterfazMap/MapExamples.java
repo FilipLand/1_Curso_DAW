@@ -21,6 +21,14 @@ public class MapExamples {
         System.out.println(treeMapa);
 
         System.out.println(hashMapa.get("Filip"));
+        System.out.println(linkedHashMapa.get("Martin"));
+        System.out.println(treeMapa.get("Luis"));
+
+        System.out.println(hashMapa.containsKey("Carlos"));
+        hashMapa.remove("Carlos");
+        System.out.println(hashMapa.containsKey("Carlos"));
+
+        System.out.println(linkedHashMapa.size());
 
     }
 
@@ -34,7 +42,7 @@ public class MapExamples {
 
     public static void lista2(Map<String, Integer> linkedHashMap) {
         linkedHashMap.put("Eduardo", 8);
-        linkedHashMap.put("Martin", 19);
+        linkedHashMap.put("Martin", 9);
         linkedHashMap.put("Marco", 10);
         linkedHashMap.put("Sandra", 14);
         linkedHashMap.put("Ana", 17);
@@ -45,6 +53,6 @@ public class MapExamples {
         treeMap.put("Gabriel", 24);
         treeMap.put("Marta", 18);
         treeMap.put("Luis", 14);
-        treeMap.put("Lucas", 13);
+        treeMap.put(" ", 13);
     }
 }
