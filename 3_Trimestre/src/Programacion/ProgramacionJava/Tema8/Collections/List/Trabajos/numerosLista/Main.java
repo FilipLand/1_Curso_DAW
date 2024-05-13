@@ -11,7 +11,7 @@ public class Main {
 
     }
 
-    public static void Lista(List<Numeros> listaNumeros) {
+    public static List<Numeros> Lista(List<Numeros> listaNumeros) {
         int numero;
         for (int i = 0; i < 50; i++) {
             numero = 0;
@@ -19,5 +19,6 @@ public class Main {
             listaNumeros.add(new Numeros(numero));
 
         }
+        return listaNumeros;
     }
 }
