@@ -8,16 +8,13 @@ public class Main {
         List<Numeros> listaNumeros = new ArrayList<>();
         Lista(listaNumeros);
         System.out.println(listaNumeros);
-
     }
 
     public static List<Numeros> Lista(List<Numeros> listaNumeros) {
         int numero;
         for (int i = 0; i < 50; i++) {
-            numero = 0;
             numero = (int) (Math.random() * 10 + 1);
             listaNumeros.add(new Numeros(numero));
-
         }
         return listaNumeros;
     }
