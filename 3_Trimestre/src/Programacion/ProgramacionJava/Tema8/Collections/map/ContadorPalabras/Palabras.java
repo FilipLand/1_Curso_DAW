@@ -6,6 +6,11 @@ import java.util.List;
 import java.util.Map;
 
 public class Palabras {
+    /**
+     * @param lista               Tipo List<String>
+     * @param mapaCantidadAparece Tipo Map<String, Integer> con un new Hash Map
+     * @param palabra             Tipo palabra contar palabras
+     */
     public static void main(String[] args) {
 
         final String fil = "Filip";
@@ -18,8 +23,8 @@ public class Palabras {
         final String eva = "Eva";
         final String mar = "Maria";
 
-        List<String> lista = Arrays.asList(fil, lil, eva, ros, fil, fil, ros, jai, edu, mat, fil,
-                lil, mat, lil, fil, ros, edu, fra, fra, fra, fil, fra, edu, lil, mar, eva, mat);
+        List<String> lista = Arrays.asList(fil, lil, eva, ros, fil, fil, ros, jai, edu, mat, fil, lil, mat, lil, fil,
+                ros, edu, fra, fra, fra, fil, fra, edu, lil, mar, eva, mat, ros, ros);
         Map<String, Integer> mapaCantidadAparece = new HashMap<>();
 
         for (String palabra : lista) {
