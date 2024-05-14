@@ -29,6 +29,10 @@ public class Main {
         nuevaSet.add(new MiClase(40, "Tranvia"));
         System.out.println(nuevaSet);
 
+        MiClase cordova = new MiClase(1, "Cordova");
+        MiClase almeria = new MiClase(2, "almeria");
+        MiClase malaga = new MiClase(3, "Malaga");
+
     }
 
     public static void lista(Set<MiClase> clase) {

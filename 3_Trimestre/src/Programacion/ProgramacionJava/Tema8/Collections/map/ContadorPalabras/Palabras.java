@@ -8,21 +8,27 @@ import java.util.Map;
 public class Palabras {
     public static void main(String[] args) {
 
-        final String fi = "Filip";
-        final String li = "Lista";
-        final String ja = "Jaime";
-        final String ed = "Eduardo";
-        final String ma = "Mateo";
-        final String fr = "Franek";
+        final String fil = "Filip";
+        final String lil = "Lili";
+        final String jai = "Jaime";
+        final String edu = "Eduardo";
+        final String mat = "Mateo";
+        final String fra = "Franek";
+        final String ros = "Rosa";
+        final String eva = "Eva";
+        final String mar = "Maria";
 
-        List<String> lista = Arrays.asList(fi, li, fi, fi, ja, ed, ma, fi, li, fi, ed, fr, fr);
-
+        List<String> lista = Arrays.asList(fil, lil, eva, ros, fil, fil, ros, jai, edu, mat, fil,
+                lil, fil, ros, edu, fra, fra, fil, fra, edu, lil, mar, eva, mat);
         Map<String, Integer> mapaCantidadAparece = new HashMap<>();
 
-        for (int i = 0; i < lista.size(); i++) {
-            if (mapaCantidadAparece.containsKey(lista)) {
-
+        for (String palabra : lista) {
+            Integer contar = mapaCantidadAparece.get(palabra);
+            if (contar == null) {
+                contar = 0;
             }
+            mapaCantidadAparece.put(palabra, contar + 1);
         }
+        System.out.println(mapaCantidadAparece);
     }
 }
