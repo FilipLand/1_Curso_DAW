@@ -1,5 +1,6 @@
 package ProgramacionJava.Tema8.Test;
 
+import java.util.Collections;
 import java.util.HashSet;
 import java.util.Set;
 
@@ -7,6 +8,7 @@ public class Main {
     public static void main(String[] args) {
         final String linea = "----------------------------------------------------------------------------------------";
         Set<MiClase> clase = new HashSet<>();
+
         lista(clase);
         System.out.println(linea);
         System.out.println(clase);
@@ -19,6 +21,10 @@ public class Main {
         clase.add(new MiClase(33, "Granada"));
         System.out.println(clase);
         System.out.println(linea);
+
+        Set<MiClase> NuevaSet = new HashSet<>();
+        Set.of(new MiClase(2, "Francia"), new MiClase(4, "Alemania"), new MiClase(7, "Polonia"));
+        Collections.unmodifiableSet(NuevaSet);
 
     }
 
