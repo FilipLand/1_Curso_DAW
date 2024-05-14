@@ -19,7 +19,7 @@ public class Palabras {
         final String mar = "Maria";
 
         List<String> lista = Arrays.asList(fil, lil, eva, ros, fil, fil, ros, jai, edu, mat, fil,
-                lil, fil, ros, edu, fra, fra, fil, fra, edu, lil, mar, eva, mat);
+                lil, mat, lil, fil, ros, edu, fra, fra, fra, fil, fra, edu, lil, mar, eva, mat);
         Map<String, Integer> mapaCantidadAparece = new HashMap<>();
 
         for (String palabra : lista) {
