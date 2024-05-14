@@ -22,19 +22,23 @@ public class Main {
         System.out.println(clase);
         System.out.println(linea);
 
-        Set<MiClase> NuevaSet = new HashSet<>();
+        Set<MiClase> nuevaSet = new HashSet<>();
         Set.of(new MiClase(2, "Francia"), new MiClase(4, "Alemania"), new MiClase(7, "Polonia"));
-        Collections.unmodifiableSet(NuevaSet);
+        nuevaSet.add(new MiClase(4, "Tranvia"));
+        Collections.unmodifiableSet(nuevaSet);
+        nuevaSet.add(new MiClase(40, "Tranvia"));
+        System.out.println(nuevaSet);
 
     }
 
     public static void lista(Set<MiClase> clase) {
         clase.add(new MiClase(1, "Murcia"));
-        clase.add(new MiClase(2, "Granada"));
+        clase.add(new MiClase(2, "Sevilla"));
         clase.add(new MiClase(1, "Segovia"));
         clase.add(new MiClase(11, "vigo"));
         clase.add(new MiClase(10, "Sevilla"));
         clase.add(new MiClase(1, "Murcia"));
         clase.add(new MiClase(12, "Valencia"));
+        clase.add(new MiClase(40, "Granada"));
     }
 }
