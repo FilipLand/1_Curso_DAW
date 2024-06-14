@@ -1,0 +1,87 @@
+Bienvenido a **STREAMFLIX**
+1. Recomendar
+2. Ver recomendaciones anteriores
+3. Salir
+
+Seleccione una opción: 1
+Recomendación para Juan Pérez: Contenido{id=123, titulo='Bluey', genero='COMEDIA', anioLanzamiento=2018, calificacion=9.7}
+Recomendación para María García: Contenido{id=271, titulo='Black Mirror', genero='CIENCIA_FICCION', anioLanzamiento=2011, calificacion=8.8}
+Recomendación para Luis Fernández: Contenido{id=361, titulo='The Office', genero='COMEDIA', anioLanzamiento=2005, calificacion=9.0}
+Recomendación para Ana López: Contenido{id=317, titulo='Friends', genero='COMEDIA', anioLanzamiento=1994, calificacion=8.9}
+Recomendación para Carlos Sánchez: Contenido{id=49, titulo='John Wick', genero='ACCION', anioLanzamiento=2014, calificacion=7.4}
+Las recomendaciones han sido almacenadas.
+
+Process finished with exit code 0
+
+-------------------------------------------------------------------------------------
+
+Bienvenido a **STREAMFLIX**
+1. Recomendar
+2. Ver recomendaciones anteriores
+3. Salir
+
+Seleccione una opción: 2
+
+**Recomendaciones anteriores**
+
+ 1ª. Recomendacion{
+Usuario{nombre='Juan', apellidos='Pérez', email='juan.perez@example.com', fechaNacimiento=1985-03-15}
+Contenido{id=123, titulo='Bluey', genero='COMEDIA', anioLanzamiento=2018, calificacion=9.7}
+}
+-------------------------------------------------
+
+ 2ª. Recomendacion{
+Usuario{nombre='María', apellidos='García', email='maria.garcia@example.com', fechaNacimiento=1992-07-22}
+Contenido{id=271, titulo='Black Mirror', genero='CIENCIA_FICCION', anioLanzamiento=2011, calificacion=8.8}
+}
+-------------------------------------------------
+
+ 3ª. Recomendacion{
+Usuario{nombre='Luis', apellidos='Fernández', email='luis.fernandez@example.com', fechaNacimiento=1978-11-05}
+Contenido{id=361, titulo='The Office', genero='COMEDIA', anioLanzamiento=2005, calificacion=9.0}
+}
+-------------------------------------------------
+
+ 4ª. Recomendacion{
+Usuario{nombre='Ana', apellidos='López', email='ana.lopez@example.com', fechaNacimiento=2000-01-12}
+Contenido{id=317, titulo='Friends', genero='COMEDIA', anioLanzamiento=1994, calificacion=8.9}
+}
+-------------------------------------------------
+
+ 5ª. Recomendacion{
+Usuario{nombre='Carlos', apellidos='Sánchez', email='carlos.sanchez@example.com', fechaNacimiento=1988-08-30}
+Contenido{id=49, titulo='John Wick', genero='ACCION', anioLanzamiento=2014, calificacion=7.4}
+}
+-------------------------------------------------
+
+ 6ª. Recomendacion{
+Usuario{nombre='Juan', apellidos='Pérez', email='juan.perez@example.com', fechaNacimiento=1985-03-15}
+Contenido{id=123, titulo='Bluey', genero='COMEDIA', anioLanzamiento=2018, calificacion=9.7}
+}
+-------------------------------------------------
+
+ 7ª. Recomendacion{
+Usuario{nombre='María', apellidos='García', email='maria.garcia@example.com', fechaNacimiento=1992-07-22}
+Contenido{id=271, titulo='Black Mirror', genero='CIENCIA_FICCION', anioLanzamiento=2011, calificacion=8.8}
+}
+-------------------------------------------------
+
+ 8ª. Recomendacion{
+Usuario{nombre='Luis', apellidos='Fernández', email='luis.fernandez@example.com', fechaNacimiento=1978-11-05}
+Contenido{id=361, titulo='The Office', genero='COMEDIA', anioLanzamiento=2005, calificacion=9.0}
+}
+-------------------------------------------------
+
+ 9ª. Recomendacion{
+Usuario{nombre='Ana', apellidos='López', email='ana.lopez@example.com', fechaNacimiento=2000-01-12}
+Contenido{id=317, titulo='Friends', genero='COMEDIA', anioLanzamiento=1994, calificacion=8.9}
+}
+-------------------------------------------------
+
+ 10ª. Recomendacion{
+Usuario{nombre='Carlos', apellidos='Sánchez', email='carlos.sanchez@example.com', fechaNacimiento=1988-08-30}
+Contenido{id=49, titulo='John Wick', genero='ACCION', anioLanzamiento=2014, calificacion=7.4}
+}
+-------------------------------------------------
+
+Process finished with exit code 0
