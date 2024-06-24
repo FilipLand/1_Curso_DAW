@@ -12,5 +12,11 @@ public class PruebaAnimalCSV {
         
         f.leerFicheroAnimalCSV();
         f.mostrarAnimales();
+
+        Animal b = new Animal("a7", "serpiente", "paco", 2);
+        Animal c = new Animal("a8", "caballo", "sergio", 7);
+        f.getAnimales().add(b);
+        f.getAnimales().add(c);
+        f.escribirFicheroAnimalesCSV();
     }
 }

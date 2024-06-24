@@ -1,8 +1,10 @@
 package Programar_Examen.JoseCSV;
 
 import java.io.BufferedReader;
+import java.io.BufferedWriter;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
+import java.io.FileWriter;
 import java.io.IOException;
 import java.util.ArrayList;
 
@@ -51,6 +53,28 @@ public class FicheroAnimalCSV {
             e1.printStackTrace();
         } 
     } 
+    public void escribirFicheroAnimalesCSV(){
+        FileWriter fw;
+         try {
+            fw = new FileWriter(this.nombreFicheroCSVescribir);
+            BufferedWriter bw = new BufferedWriter(fw);
+            String lineaTexto = "";
+            for (Animal a: this.animales){
+                String textoId = a.getIdAnimal();
+                String textoRaza = a.getRaza();
+                String textoNombre = a.getNombre();
+                String textoEdad = Integer.toString(a.getEdad());
+                lineaTexto = textoId + ";" + textoRaza + ";" + textoNombre + ";" + textoEdad + "\n";
+                bw.write(lineaTexto);
+            }
+            bw.flush();
+            bw.close();
+            fw.close();
+        } catch (IOException e2) {
+            e2.getMessage();
+        }
+      
+    }
 
     public String getNombreFicheroCSVleer() {
         return nombreFicheroCSVleer;
