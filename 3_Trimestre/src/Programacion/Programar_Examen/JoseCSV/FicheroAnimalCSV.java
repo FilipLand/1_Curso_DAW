@@ -34,41 +34,42 @@ public class FicheroAnimalCSV {
         FileReader fr;
         try {
             fr = new FileReader(this.nombreFicheroCSVleer);
-            String linea = "";
-            BufferedReader br = new BufferedReader(fr);
-            while ((linea = br.readLine()) != null)
-            {
-                String[] datosLinea = linea.split(";");
-                String idAnimal = datosLinea[0].trim();
-                String raza = datosLinea[1].trim();
-                String nombre = datosLinea[2].trim();
-                int edad = Integer.parseInt(datosLinea[3].trim());
-                Animal ani = new Animal( idAnimal, raza , nombre, edad);
-                this.animales.add(ani);
+            String linea;
+            try (BufferedReader br = new BufferedReader(fr)) {
+                while ((linea = br.readLine()) != null)
+                {
+                    String[] datosLinea = linea.split(";");
+                    String idAnimal = datosLinea[0].trim();
+                    String raza = datosLinea[1].trim();
+                    String nombre = datosLinea[2].trim();
+                    int edad = Integer.parseInt(datosLinea[3].trim());
+                    Animal ani = new Animal( idAnimal, raza , nombre, edad);
+                    this.animales.add(ani);
+                }
             }
 
         } catch (FileNotFoundException e) {
-            e.printStackTrace();
+            e.getMessage();
         } catch (IOException e1){
-            e1.printStackTrace();
+            e1.getMessage();
         } 
     } 
     public void escribirFicheroAnimalesCSV(){
         FileWriter fw;
          try {
             fw = new FileWriter(this.nombreFicheroCSVescribir);
-            BufferedWriter bw = new BufferedWriter(fw);
-            String lineaTexto = "";
-            for (Animal a: this.animales){
-                String textoId = a.getIdAnimal();
-                String textoRaza = a.getRaza();
-                String textoNombre = a.getNombre();
-                String textoEdad = Integer.toString(a.getEdad());
-                lineaTexto = textoId + ";" + textoRaza + ";" + textoNombre + ";" + textoEdad + "\n";
-                bw.write(lineaTexto);
+            try (BufferedWriter bw = new BufferedWriter(fw)) {
+                String lineaTexto;
+                for (Animal a: this.animales){
+                    String textoId = a.getIdAnimal();
+                    String textoRaza = a.getRaza();
+                    String textoNombre = a.getNombre();
+                    String textoEdad = Integer.toString(a.getEdad());
+                    lineaTexto = textoId + ";" + textoRaza + ";" + textoNombre + ";" + textoEdad + "\n";
+                    bw.write(lineaTexto);
+                }
+                bw.flush();
             }
-            bw.flush();
-            bw.close();
             fw.close();
         } catch (IOException e2) {
             e2.getMessage();
